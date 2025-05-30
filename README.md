@@ -19,3 +19,4 @@ This project demonstrates a simple and accessible modal component built with **R
   - Format code manually: `npx prettier --write .`
   - Run type checks: `npm run type-check`
   - Run tests: `npm run test`
+  - This project uses Husky to enforce code quality before commits.
