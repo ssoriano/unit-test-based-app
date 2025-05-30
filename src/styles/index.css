@@ -1,0 +1,52 @@
+/* 1. Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Base HTML */
+html,
+body {
+  height: 100%;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 3. CSS Variables */
+:root {
+  --color-primary: #0070f3;
+  --color-secondary: #ff4081;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+}
+
+/* 4. Base Elements */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 5. Accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+}
