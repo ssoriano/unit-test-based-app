@@ -9,7 +9,8 @@
     "type-check": "tsc --noEmit",
     "test": "vitest",
     "test:watch": "vitest --watch",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -54,7 +55,9 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "html-webpack-plugin": "^5.6.3",
+    "husky": "^9.1.7",
     "jsdom": "^26.1.0",
+    "lint-staged": "^16.1.0",
     "prettier": "^3.5.3",
     "react-refresh": "^0.17.0",
     "style-loader": "^4.0.0",
@@ -66,5 +69,12 @@
     "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,scss,md,yml,yaml}": "prettier --write"
   }
 }
